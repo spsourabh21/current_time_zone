@@ -1,0 +1,6 @@
+name: Current Time Zone
+type: module
+core: 8.x
+description: Admin configuration form for time zone
+version: 1.0
+configure: current_time_zone.settings

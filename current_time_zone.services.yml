@@ -1,0 +1,9 @@
+services:
+  current_time_zone.time_zone_service:
+    class: Drupal\current_time_zone\Services\TimeZoneService
+    arguments: ['@config.factory']
+  cache_context.current_time:
+    class: Drupal\current_time_zone\CacheContext\CurrentTimeCacheContext
+    arguments: ['@current_time_zone.time_zone_service']
+    tags:
+      - { name: cache_context }

@@ -1,0 +1,6 @@
+current_time_zone.admin_settings:
+  title: 'Admin Config For Time Zone'
+  route_name: current_time_zone.admin_settings
+  description: 'Time Zone Form'
+  parent: system.admin_config_content
+  weight: 10

@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function current_time_zone_theme($existing, $type, $theme, $path)
+{
+  return [
+    'display_time_zone' => [
+      'template' => 'display_time_zone',
+      'variables' => [
+        'data' => NULL,
+        'current_time' => NULL,
+      ],
+    ],
+  ];
+}
